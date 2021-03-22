@@ -1,0 +1,150 @@
+/* 响应式处理：外框尺寸 对应 Grid 的 xs、sm、md、lg、xl、xxl 六种尺寸设置; 采用媒体查询 */
+
+.wrap {
+    margin: 0 5px;
+}
+
+
+/* 设置图片宽度，避免图片过大，显示时超出范围 */
+
+img {
+    width: 100%;
+}
+
+@media all and (min-width:576px) {
+    .wrap {
+        margin: 0 10px;
+    }
+    .topics_list {
+        background-color: white;
+        padding: 0 5px;
+    }
+}
+
+@media all and (min-width:768px) {
+    .wrap {
+        margin: 0 15px;
+    }
+    .topics_list {
+        background-color: white;
+        padding: 0 10px;
+    }
+}
+
+@media all and (min-width:992px) {
+    .wrap {
+        margin: 0 20px;
+    }
+    .topics_list {
+        background-color: white;
+        padding: 0 15px;
+    }
+}
+
+@media all and (min-width:1200px) {
+    .wrap {
+        margin: 0 auto;
+        width: 980px;
+    }
+    .topics_list {
+        background-color: white;
+        padding: 0 20px;
+    }
+}
+
+@media all and (min-width:1600px) {
+    .wrap {
+        width: 1200px;
+    }
+    .topics_list {
+        background-color: white;
+        padding: 0 25px;
+    }
+}
+
+
+/* h标签自带 margin */
+
+#page {
+    /* antd Layout带的弹性盒模型，默认 min-height：0*/
+    min-height: 100vh;
+    background-color: rgb(238, 228, 214);
+}
+
+#logo {
+    margin: 0;
+    text-align: center;
+}
+
+#header {
+    padding: 0;
+}
+
+#content {
+    margin-top: 10px;
+}
+
+#footer {
+    margin: 0;
+    padding: 25px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+.topic_tag {
+    margin: 0 5px;
+}
+
+.index_pagination {
+    border-top: 1px solid #f0f0f0;
+    padding: 10px 60px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+#user_page .ant-card {
+    margin-top: 10px;
+}
+
+.user_detail {
+    text-align: center;
+}
+
+.user_detail span {
+    margin: 5px 10px;
+}
+
+
+/* 关于页面的静态数据样式 */
+
+.markdown-text h2,
+h3 {
+    margin: 30px 0 15px;
+    border-bottom: 1px solid #eee;
+    font-weight: 700;
+}
+
+.markdown-text>:first-child {
+    margin-top: 0;
+}
+
+.static_bar .ant-card {
+    margin-bottom: 10px;
+}
+
+.ant-card-head {
+    background: rgb(247, 246, 244) !important;
+}
+
+.static_img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.qr_code {
+    text-align: center;
+}
+
+a {
+    color: #ccc;
+}
